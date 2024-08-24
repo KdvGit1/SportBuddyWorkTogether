@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/buddyIdEnterEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF9800"
+        android:hint="Enter Buddy ID"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/buddyNicknameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF9800"
+        android:hint="Enter Nickname"
+        android:minHeight="48dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/addBuddyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF9800"
+        android:text="Add Buddy"
+        android:layout_marginTop="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#8BC34A"
+        android:contentDescription="@string/app_name"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/buddyListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"/>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/backToMainPageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF9800"
+        android:text="Back to Main Page"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
